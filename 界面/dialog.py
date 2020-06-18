@@ -1,0 +1,93 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'dialog.ui'
+#
+# Created by: PyQt5 UI code generator 5.11.3
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Dialog(object):
+    def setupUi(self, Dialog):
+        Dialog.setObjectName("Dialog")
+        Dialog.resize(490, 332)
+        self.verticalLayout = QtWidgets.QVBoxLayout(Dialog)
+        self.verticalLayout.setContentsMargins(11, 11, 11, 11)
+        self.verticalLayout.setSpacing(6)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setContentsMargins(-1, -1, 0, -1)
+        self.horizontalLayout.setSpacing(6)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.groupBox = QtWidgets.QGroupBox(Dialog)
+        self.groupBox.setObjectName("groupBox")
+        self.formLayout = QtWidgets.QFormLayout(self.groupBox)
+        self.formLayout.setContentsMargins(11, 11, 11, 11)
+        self.formLayout.setSpacing(6)
+        self.formLayout.setObjectName("formLayout")
+        self.label = QtWidgets.QLabel(self.groupBox)
+        self.label.setObjectName("label")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label)
+        self.label_2 = QtWidgets.QLabel(self.groupBox)
+        self.label_2.setObjectName("label_2")
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_2)
+        self.label_3 = QtWidgets.QLabel(self.groupBox)
+        self.label_3.setObjectName("label_3")
+        self.formLayout.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label_3)
+        self.lr_lineedit = QtWidgets.QLineEdit(self.groupBox)
+        self.lr_lineedit.setObjectName("lr_lineedit")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.lr_lineedit)
+        self.epochs_lineedit = QtWidgets.QLineEdit(self.groupBox)
+        self.epochs_lineedit.setObjectName("epochs_lineedit")
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.epochs_lineedit)
+        self.batch_size_linedit = QtWidgets.QLineEdit(self.groupBox)
+        self.batch_size_linedit.setObjectName("batch_size_linedit")
+        self.formLayout.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.batch_size_linedit)
+        self.horizontalLayout.addWidget(self.groupBox)
+        self.groupBox_3 = QtWidgets.QGroupBox(Dialog)
+        self.groupBox_3.setObjectName("groupBox_3")
+        self.formLayout_2 = QtWidgets.QFormLayout(self.groupBox_3)
+        self.formLayout_2.setContentsMargins(11, 11, 11, 11)
+        self.formLayout_2.setSpacing(6)
+        self.formLayout_2.setObjectName("formLayout_2")
+        self.in_label = QtWidgets.QLabel(self.groupBox_3)
+        self.in_label.setObjectName("in_label")
+        self.formLayout_2.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.in_label)
+        self.up_label = QtWidgets.QLabel(self.groupBox_3)
+        self.up_label.setObjectName("up_label")
+        self.formLayout_2.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.up_label)
+        self.ksn_label = QtWidgets.QLabel(self.groupBox_3)
+        self.ksn_label.setObjectName("ksn_label")
+        self.formLayout_2.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.ksn_label)
+        self.in_lineedit = QtWidgets.QLineEdit(self.groupBox_3)
+        self.in_lineedit.setObjectName("in_lineedit")
+        self.formLayout_2.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.in_lineedit)
+        self.up_lineedit = QtWidgets.QLineEdit(self.groupBox_3)
+        self.up_lineedit.setObjectName("up_lineedit")
+        self.formLayout_2.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.up_lineedit)
+        self.ksn_linedit = QtWidgets.QLineEdit(self.groupBox_3)
+        self.ksn_linedit.setObjectName("ksn_linedit")
+        self.formLayout_2.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.ksn_linedit)
+        self.horizontalLayout.addWidget(self.groupBox_3)
+        self.verticalLayout.addLayout(self.horizontalLayout)
+        self.ok_btn = QtWidgets.QPushButton(Dialog)
+        self.ok_btn.setObjectName("ok_btn")
+        self.verticalLayout.addWidget(self.ok_btn)
+
+        self.retranslateUi(Dialog)
+        QtCore.QMetaObject.connectSlotsByName(Dialog)
+
+    def retranslateUi(self, Dialog):
+        _translate = QtCore.QCoreApplication.translate
+        Dialog.setWindowTitle(_translate("Dialog", "网络参数设置"))
+        self.groupBox.setTitle(_translate("Dialog", "公共部分设置"))
+        self.label.setText(_translate("Dialog", "动态学习率 :"))
+        self.label_2.setText(_translate("Dialog", "epochs :"))
+        self.label_3.setText(_translate("Dialog", "Batch Size :"))
+        self.groupBox_3.setTitle(_translate("Dialog", "算法部分设置"))
+        self.in_label.setText(_translate("Dialog", "测试集及验证集比例 :"))
+        self.up_label.setText(_translate("Dialog", "测试集及验证集比例 :"))
+        self.ksn_label.setText(_translate("Dialog", "测试集及验证集比例 :"))
+        self.ok_btn.setText(_translate("Dialog", "确定"))
+
