@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import os, re
 import sys
-sys.path.append('../CDCNN/')
-sys.path.append('../DBDA/')
+# sys.path.append('../CDCNN/')
+# sys.path.append('../DBDA/')
 sys.path.append('../DBMA/')
 sys.path.append('../FDSSC/')
 sys.path.append('../SSRN/')
@@ -13,9 +13,9 @@ from timeit import default_timer as timer
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
-from CDCNN_main import *
+# from CDCNN_main import *
 from DBMA_main import *
-from DBDA_main import *
+# from DBDA_main import *
 from FDSSC_main import *
 from SSRN_main import *
 from showimg import ShowImage
@@ -33,11 +33,11 @@ class Thread_1(QThread):  # 线程1,不用这个界面会卡死.结果用信号�
         t1 = time.time()
         mainWindow.statusbar.showMessage("---运行中---")
         choose = mainWindow.comboBox_2.currentText()
-        if choose=="CDCNN":
-            mainWindow.cdcnn_run()
-        elif choose=="DBDA":
-            mainWindow.dbda_run()
-        elif choose=="DBMA":
+        # if choose=="CDCNN":
+        #     mainWindow.cdcnn_run()
+        # elif choose=="DBDA":
+        #     mainWindow.dbda_run()
+        if choose=="DBMA":
             mainWindow.dbma_run()
         elif choose=="FDSSC":
             mainWindow.fdssc_run()
@@ -46,7 +46,7 @@ class Thread_1(QThread):  # 线程1,不用这个界面会卡死.结果用信号�
         t2 = time.time()
         mainWindow.statusbar.showMessage("---分析结束,用时{}s---".format(t2 - t1))
         self._signal.emit()
-class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow,Cdcnn,Dbda,Fdssc,Ssrn,Dbma):  # 参数1对应ui窗口类型.参数2对应QtDesigner生成的文件第一个class名字.默认是Ui_Form或Ui_MainWindow
+class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow,Fdssc,Ssrn,Dbma):  # 参数1对应ui窗口类型.参数2对应QtDesigner生成的文件第一个class名字.默认是Ui_Form或Ui_MainWindow
     def __init__(self, parent=None):
         super(MainWindow, self).__init__(parent)
         self.setupUi(self)
