@@ -27,8 +27,9 @@ On the main interface, compare the results images and GT(Ground Truth) images
 ![image](https://github.com/hubowen7/hyperspectral-image-classification-system/blob/master/main_interface.png)
 
 ### Sub interface
-![image](https://github.com/hubowen7/hyperspectral-image-classification-system/blob/master/interface_1.png)
 ![image](https://github.com/hubowen7/hyperspectral-image-classification-system/blob/master/interface_2.png)
+![image](https://github.com/hubowen7/hyperspectral-image-classification-system/blob/master/interface_1.png)
+
 
 
 
