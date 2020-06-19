@@ -13,6 +13,7 @@ Some of our code references the projects:
 - `pyqt >= 5.9.2` 
 
 
-
 ## Usage
-1. 
+1. You need to download the hyperspectral datasets in mat format at: http://www.ehu.eus/ccwintco/index.php?title=Hyperspectral_Remote_Sensing_Scenes, and move the files to `../datasets` folder.  2.Taking `DBMA` framework as an example 
+
+
