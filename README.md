@@ -1,6 +1,6 @@
 # Hyperspectral-Image-Classification-System
 
-'This' repository is a system based on Pytorch, sklearn and PyQt5 
+`This` repository is a system based on Pytorch, sklearn and PyQt5 
 
 Some of our code references the projects:
 [DBDA]（https://github.com/lironui/Double-Branch-Dual-Attention-Mechanism-Network#network）
