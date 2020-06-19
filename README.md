@@ -5,7 +5,7 @@ This repository is a system based on Pytorch, sklearn and PyQt5
 My code for deep learning algorithms references the projects:
 [DBDA]（https://github.com/lironui/Double-Branch-Dual-Attention-Mechanism-Network#network）  
 
-On the main interface, compare the results images and GT(Ground Truth) images
+On the main interface, the system can compare the results images and GT(Ground Truth) images. On the first sub interface, this system can compare three different results images. On the second sub interface, the system can compare the bar charts of classification result evaluation index.
 
 
 ## Requirements:
